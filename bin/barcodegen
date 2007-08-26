@@ -2,6 +2,8 @@
 #
 # barcodegen - a program for making barcodes in various image formats
 #
+# GD::Barcode::Image is the package that contains barcodegen
+#
 # uses GD::Barcode, supports following types of barcodes:
 # Code39    COOP2of5      EAN13    EAN8      IATA2of5    Industrial2of5
 # ITF       Matrix2of5    NW7      QRcode    UPCA        UPCE
@@ -27,7 +29,7 @@ use GD::Barcode::Image;
 use Image::Magick;
 use Carp;
 
-our $VERSION = 1.02;
+our $VERSION = 1.03;
 
 # ---------------------------------------
 my $man        = 0;
@@ -247,11 +249,6 @@ Will output a PNG image to STDOUT, representing the UPC-A barcode for
 this barcode). Informational messages will also be printed to STDERR.
 
 =back
-
-=head1 README
-
-If there is any text in this section, it will be extracted into
-a separate README file.
 
 =head1 PREREQUISITES
 

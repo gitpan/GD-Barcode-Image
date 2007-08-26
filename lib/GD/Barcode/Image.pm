@@ -5,7 +5,7 @@ use GD::Barcode;
 require Exporter;
 use vars qw($VERSION @ISA $AUTOLOAD);
 @ISA     = qw(Exporter);    # HAS-A GD::Barcode:<Symbology>, no IS-A
-$VERSION = 1.02;
+$VERSION = 1.03;
 
 #------------------------------------------------------------------------------
 # GD::Barcode::Image  extends GD::Barcode functionality.
@@ -195,10 +195,11 @@ Copyright (C) 2007 Avinash Chopde <avinash@aczoom.com>  www.aczoom.com
 
 This program is free software; you can redistribute it and/or modify it
 under the same terms as Perl itself.
-See http://www.perl.com/perl/misc/Artistic.html.
 
 =head1 SEE ALSO
 
-GD::Barcode
+C<barcodegen>
+
+C<GD::Barcode>
 
 =cut
